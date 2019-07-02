@@ -1,48 +1,37 @@
 <template>
-  <div class="container">
-    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+  <div class="container-flex">
+    <div class="row">
+      <div class="col-lg-3 r"></div>
+      <div class="col-lg-6 z">
+        <maincard />
+      </div>
+      <div class="col-lg-3 l"></div>
+    </div>
   </div>
 </template>
 
 <script>
 import Logo from "~/components/Logo.vue";
-
+import maincard from "~/components/indexCard.vue";
 export default {
   components: {
-    Logo
+    maincard
   }
 };
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+.z {
+  padding: 0;
 }
+.r {
+  background-attachment: fixed;
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  background-image: url("~assets/3.jpg");
 }
+.l {
+  background-attachment: fixed;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  background-image: url("https://tse2-mm.cn.bing.net/th?id=OIP.Oct7I-VO8iCVSrK_hr059gHaEa&w=299&h=175&c=7&o=5&dpr=1.25&pid=1.7");
 }
 </style>

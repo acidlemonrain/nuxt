@@ -1,13 +1,41 @@
 <template>
-  <div>
+  <div class="b">
+    <ul class="nav justify-content-center navbar-dark bg-dark fixed-top">
+      <li class="nav-item">
+        <nuxt-link to="/">
+          <a class="nav-link active" href="#">Attack</a>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link to="/about">
+          <a class="nav-link active" href="#">Why</a>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link to="/">
+          <a class="nav-link active" href="#">Titan</a>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link to="/">
+          <a class="nav-link active" href="#">Chara</a>
+        </nuxt-link>
+      </li>
+    </ul>
     <nuxt />
   </div>
 </template>
 
 <style>
+.b {
+  background-color: #35495e;
+}
+.nav-link {
+  color: rgba(238, 149, 66, 0.883);
+}
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -16,7 +44,6 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
