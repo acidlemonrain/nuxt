@@ -27,6 +27,9 @@
 </template>
 
 <style>
+body {
+  overflow-x: hidden;
+}
 .b {
   background-color: #35495e;
 }
